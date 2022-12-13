@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Recommendation2 = ({ img, Name }) => {
+const Recommendation2 = ({ image, name }) => {
     return(
     <>
         <div className="relative mt-8 xl:mt-12 ml-9 pr-8 md:pr-10 lg:pr-10">
-                <img src={img} alt="" className="rounded-lg w-screen "/>
+                <img src={image} alt="" className="w-screen h-40 md:h-52 lg:h-72 xl:h-96"/>
                 <div className="absolute bg-gradient-to-r from-[#0066FE] to-transparent rounded-bl-lg px-20 bottom-0 py-1.5 md:py-2 lg:py-3 text-white">
-                <h1 className="font-semibold text-sm lg:text-xl xl:text-2xl -ml-16"><Link to={'/detaildestination'}>{Name}</Link></h1>
+                <h1 className="font-semibold text-sm lg:text-xl xl:text-2xl -ml-16"><Link to={'/detaildestination'}>{name}</Link></h1>
                 <p className="text-xs lg:text-base xl:text-lg -ml-16">Destinasi</p>
             </div>
         </div>
